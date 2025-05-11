@@ -1,7 +1,7 @@
 services:
   - type: web
-    name: fiber-api
-    env: go
-    buildCommand: go build -o main
-    startCommand: ./main
-    region: oregon
+    name: go
+    runtime: go
+    plan: free
+    buildCommand: go build -tags netgo -ldflags '-s -w' -o app
+    startCommand: ./app
