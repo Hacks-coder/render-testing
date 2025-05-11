@@ -1,4 +1,4 @@
-module api
+module github.com/Hacks-coder/render-testing
 
 go 1.23.2
 
